@@ -1,7 +1,28 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Book.create( isbn: "978-1-68050-273-2", title: "Docker for Rails Developers", tagline: "Build, Ship, and Run Your Applications Everywhere", cover: "https://imagery.pragprog.com/products/525/ridocker.jpg", synopsis: "Docker does for DevOps what Rails did for web development—it gives you a new set of superpowers. Gone are “works on my machine” woes and lengthy setup tasks, replaced instead by a simple, consistent, Docker-based development environment that will have your team up and running in seconds. Gain hands-on, real-world experience with a tool that’s rapidly becoming fundamental to software development. Go from zero all the way to production as Docker transforms the massive leap of deploying your app in the cloud into a baby step." )
+Author.create( name: "Rob Isenberg" )
+Authorship.create( book_id: 1 , author_id: 1 )
+
+Book.create( isbn: "978-1-68050-251-0", title: "Agile Web Development with Rails 5.1", tagline: nil, cover: "https://imagery.pragprog.com/products/530/rails51.jpg", synopsis: "Learn Rails the way the Rails core team recommends it, along with the tens of thousands of developers who have used this broad, far-reaching tutorial and reference. If you’re new to Rails, you’ll get step-by-step guidance. If you’re an experienced developer, get the comprehensive, insider information you need for the latest version of Ruby on Rails. The new edition of this award-winning classic is completely updated for Rails 5.1 and Ruby 2.4, with information on system testing, Webpack, and advanced JavaScript." )
+Author.create( name: "Sam Ruby" )
+Author.create( name: "David Bryant Copeland" )
+Authorship.create( book_id: 2 , author_id: 2 )
+Authorship.create( book_id: 2 , author_id: 3 )
+
+Book.create( isbn: "978-1-68050-238-1", title: "The Cucumber Book, Second Edition", tagline: "Behaviour-Driven Development for Testers and Developers", cover: "https://imagery.pragprog.com/products/495/hwcuc2.jpg", synopsis: "Your customers want rock-solid, bug-free software that does exactly what they expect it to do. Yet they can’t always articulate their ideas clearly enough for you to turn them into code. You need Cucumber: a testing, communication, and requirements tool—all rolled into one. All the code in this book is updated for Cucumber 2.4, Rails 5, and RSpec 3.5." )
+Author.create( name: "Matt Wynne" )
+Author.create( name: "Aslak Hellesøy" )
+Author.create( name: "Steve Tooke" )
+Authorship.create( book_id: 3 , author_id: 4 )
+Authorship.create( book_id: 3 , author_id: 5 )
+Authorship.create( book_id: 3 , author_id: 6 )
+
+Book.create( isbn: "978-1-93778-501-7", title: "Cucumber Recipes", tagline: "Automate Anything with BDD Tools and Techniques", cover: "https://imagery.pragprog.com/products/297/dhwcr.jpg", synopsis: "You can test just about anything with Cucumber. We certainly have, and in Cucumber Recipes we’ll show you how to apply our hard-won field experience to your own projects. Once you’ve mastered the basics, this book will show you how to get the most out of Cucumber—from specific situations to advanced test-writing advice. With over forty practical recipes, you’ll test desktop, web, mobile, and server applications across a variety of platforms. This book gives you tools that you can use today to automate any system that you encounter, and do it well." )
+Author.create( name: "Ian Dees" )
+Author.create( name: "Matt Wynne" )
+Authorship.create( book_id: 4 , author_id: 7 )
+Authorship.create( book_id: 4 , author_id: 8 )
+Authorship.create( book_id: 4 , author_id: 5 )
+
+Book.create( isbn: "978-1-68050-250-3", title: "Rails 5 Test Prescriptions", tagline: "Build a Healthy Codebase", cover: "https://imagery.pragprog.com/products/523/nrtest3.jpg", synopsis: "Does your Rails code suffer from bloat, brittleness, or inaccuracy? Cure these problems with the regular application of test-driven development. You’ll use Rails 5.2, Minitest 5, and RSpec 3.7, as well as popular testing libraries such as factory_bot and Cucumber. Updates include Rails 5.2 system tests and Webpack integration. Do what the doctor ordered to make your applications feel all better. Side effects may include better code, fewer bugs, and happier developers." )
+Author.create( name: "Noel Rappin" )
+Authorship.create( book_id: 5 , author_id: 9 )

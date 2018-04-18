@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'welcome#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    namespace :v1 do
+      resources :books, except: [:new, :edit]
+      resources :authors, except: [:new, :edit]
+    end
+  end
 end
